@@ -1,0 +1,57 @@
+version: "3.1"
+
+stories:
+- story: Cumprimento e solicitação de recomendação de música
+  steps:
+  - intent: saudacao
+  - action: utter_greet
+  - intent: recomendar_musica
+  - action: action_recommend_music
+
+- story: story_recomendar_musica
+  steps:
+  - intent: recomendar_musica
+  - action: utter_ask_genre_preference
+  - intent: genero_musical
+    entities:
+    - genero: rock
+  - action: action_recommend_music
+
+
+- story: Solicitação de recomendação de música por gênero
+  steps:
+  - intent: recomendar_musica
+  - action: action_recommend_music
+
+- story: Solicitação de recomendação de música por gênero específico
+  steps:
+  - intent: recomendar_musica
+  - action: utter_ask_genre_preference
+  - action: action_recommend_music
+
+- story: Solicitação de recomendação de uma música específica
+  steps:
+  - intent: recomendar_musica
+  - action: action_recommend_music
+
+- story: Cumprimento e solicitação de recomendação de música de um gênero específico
+  steps:
+  - intent: saudacao
+  - action: utter_greet
+  - intent: recomendar_musica
+  - action: utter_ask_genre_preference
+  - action: action_recommend_music
+
+- story: Solicitação de recomendação de música sem especificar um gênero, esclarecimento e fornecimento do gênero pelo usuário
+  steps:
+  - intent: recomendar_musica
+  - action: utter_ask_genre_preference
+  - action: action_recommend_music
+
+- story: Solicitação de recomendação de música sem preferência de gênero
+  steps:
+  - intent: recomendar_musica
+  - action: utter_ask_genre_preference
+  - intent: negar
+  - action: action_recommend_music
+

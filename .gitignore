@@ -1,0 +1,5 @@
+# created by virtualenv automatically
+.rasa
+Lib
+pyenv
+data/nlu.teste

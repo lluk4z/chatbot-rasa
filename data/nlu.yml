@@ -1,0 +1,259 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá
+    - Oi
+    - E aí
+    - Olá, como vai?
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+    - oi
+    - olá
+    - e ai
+    - dale
+    - opa
+    - olá, como vai?
+    - bom dia
+    - boa tarde
+    - boa noite 
+    - tchau
+    - xau
+    - tchauzinho
+    - falou
+    - flw
+    - até mais
+    - beijo 
+
+- intent: recomendar_musica
+  examples: |
+    - Pode me recomendar uma música?
+    - Você conhece alguma música boa?
+    - Quero ouvir uma música legal
+    - Estou procurando por uma boa música
+
+- intent: genero_musical
+  examples: |
+    - Gosto de pop
+    - Prefiro rock
+    - Sou fã de música eletrônica
+    - Gosto de jazz
+    - Curto hip hop
+    - Adoro música clássica
+    - Meu estilo é sertanejo
+    - Gosto de reggae
+    - Prefiro indie
+    - Sou fã de metal
+    - Curto música country
+    - Gosto de música alternativa
+    - Sou fã de R&B
+    - Curto funk
+    - Adoro música latina
+    - Prefiro música instrumental
+    - Gosto de blues
+    - Sou fã de soul
+    - Curto música gospel
+    - Gosto de música folclórica
+    - Sou fã de música oriental
+    - Curto música experimental
+    - Prefiro música ambiental
+    - Gosto de música de relaxamento
+    - Sou fã de música infantil
+    - Prefiro música acústica
+    - Gosto de música étnica
+    - Sou fã de música cristã
+    - Curto música do mundo
+    - Gosto de música africana
+    - Sou fã de música indiana
+    - Gosto de música brasileira
+    - Sou fã de música asiática
+    - Curto música árabe
+    - Gosto de música russa
+    - Sou fã de música europeia
+    - Curto música nórdica
+    - Gosto de música celta
+    - Sou fã de música folclórica
+    - Curto música tradicional
+    - Gosto de música popular
+    - Sou fã de música contemporânea
+    - Curto música experimental
+    - Prefiro música de vanguarda
+    - Gosto de música clássica contemporânea
+    - Sou fã de música atonal
+    - Curto música serialista
+    - Gosto de música minimalista
+    - Sou fã de música impressionista
+    - Gosto de música expressionista
+    - Sou fã de música dodecafônica
+    - Gosto de música microtonal
+    - Sou fã de música aleatória
+    - Gosto de música eletrônica de dança
+    - Sou fã de música trance
+    - Curto música house
+    - Gosto de música techno
+    - Sou fã de música dubstep
+    - Gosto de música drum and bass
+    - Sou fã de música breakbeat
+    - Curto música garage
+    - Gosto de música hardcore
+    - Sou fã de música gabber
+    - Gosto de música jungle
+    - Sou fã de música happy hardcore
+    - Curto música hardstyle
+    - Gosto de música eletrônica experimental
+    - Sou fã de música IDM
+    - Gosto de música glitch
+    - Sou fã de música ambient
+    - Gosto de música downtempo
+    - Sou fã de música chill-out
+    - Gosto de música lounge
+    - Sou fã de música trip hop
+    - Gosto de música new age
+    - Sou fã de música space music
+    - Gosto de música psicodélica
+    - Sou fã de música rock psicodélico
+    - Gosto de música space rock
+    - Sou fã de música krautrock
+    - Gosto de música rock progressivo
+    - Sou fã de música prog rock
+    - Gosto de música art rock
+    - Sou fã de música experimental rock
+    - Gosto de música post-rock
+    - Sou fã de música shoegaze
+    - Gosto de música rock alternativo
+    - Sou fã de música indie rock
+    - Gosto de música britpop
+    - Sou fã de música post-punk revival
+    - Gosto de música pós-punk
+    - Sou fã de música gothic rock
+    - Gosto de música darkwave
+    - Sou fã de música coldwave
+    - Gosto de música dream pop
+    - Sou fã de música shoegaze
+    - Gosto de música indie pop
+    - Sou fã de música twee pop
+    - Gosto de música folk rock
+    - Sou fã de música country rock
+    - Gosto de música southern rock
+    - Sou fã de música roots rock
+    - Gosto de música soft rock
+    - Sou fã de música pop rock
+    - Gosto de música rock alternativo
+    - Sou fã de música rock gótico
+    - Gosto de música industrial
+    - Sou fã de música música industrial metal
+    - Gosto de música EBM
+    - Sou fã de música power electronics
+    - Gosto de música noise rock
+    - Sou fã de música rock experimental
+    - Gosto de música noise
+    - Sou fã de música no wave
+    - Gosto de música punk rock
+    - Sou fã de música skate punk
+    - Gosto de música hardcore punk
+    - Sou fã de música street punk
+    - Gosto de música anarcho punk
+    - Sou fã de música crust punk
+    - Gosto de música thrashcore
+    - Sou fã de música crossover thrash
+    - Gosto de música grindcore
+    - Sou fã de música deathgrind
+    - Gosto de música goregrind
+    - Sou fã de música cybergrind
+    - Gosto de música metalcore
+    - Sou fã de música deathcore
+    - Gosto de música mathcore
+    - Sou fã de música black metal
+    - Gosto de música death metal
+    - Sou fã de música doom metal
+    - Gosto de música gothic metal
+    - Sou fã de música symphonic metal
+    - Gosto de música folk metal
+    - Sou fã de música pagan metal
+    - Gosto de música viking metal
+    - Sou fã de música power metal
+    - Gosto de música progressive metal
+    - Sou fã de música groove metal
+    - Gosto de música nu metal
+    - Sou fã de música rap metal
+    - Gosto de música metal alternativo
+    - Sou fã de música metal industrial
+    - Gosto de música metal experimental
+    - Sou fã de música metal instrumental
+    - Gosto de música metal progressivo
+    - Sou fã de música metal sinfônico
+    - Gosto de música metal neoclássico
+    - Sou fã de música metal gótico
+    - Gosto de música metal cristão
+    - Sou fã de música metal extremo
+    - Gosto de música metal underground
+    - Sou fã de música metal brasileiro
+    - Gosto de música metal japonês
+    - Sou fã de música metal alemão
+    - Gosto de música metal escandinavo
+    - Sou fã de música metal finlandês
+    - Gosto de música metal italiano
+    - Sou fã de música metal britânico
+    - Gosto de música metal francês
+    - Sou fã de música metal espanhol
+    - Gosto de música metal português
+    - Sou fã de música metal latino-americano
+    - Gosto de música metal dos EUA
+    - Sou fã de música metal canadense
+    - Gosto de música metal mexicano
+    - Sou fã de música metal colombiano
+    - Gosto de música metal chileno
+    - Sou fã de música metal argentino
+    - Gosto de música metal peruano
+    - Sou fã de música metal brasileiro
+    - Gosto de música metal norueguês
+    - Sou fã de música metal sueco
+    - Gosto de música metal dinamarquês
+    - Sou fã de música metal finlandês
+    - Gosto de música metal islandês
+    - Sou fã de música metal russo
+    - Gosto de música metal polonês
+    - Sou fã de música metal checo
+    - Gosto de música metal húngaro
+    - Sou fã de música metal búlgaro
+    - Gosto de música metal grego
+    - Sou fã de música metal turco
+    - Gosto de música metal iraniano
+    - Sou fã de música metal indiano
+    - Gosto de música metal chinês
+    - Sou fã de música metal japonês
+    - Gosto de música metal coreano
+    - Sou fã de música metal australiano
+    - Gosto de música metal neozelandês
+    - Sou fã de música metal malásio
+    - Gosto de música metal indonésio
+    - Sou fã de música metal filipino
+    - Gosto de música metal tailandês
+    - Sou fã de música metal vietnamita
+    - Gosto de música metal sul-africano
+    - Sou fã de música metal nigeriano
+    - Gosto de música metal egípcio
+    - Sou fã de música metal marroquino
+    - Gosto de música metal tunisiano
+    - Sou fã de música metal argelino
+    - Gosto de música metal líbio
+    - Sou fã de música metal sudanês
+    - Gosto de música metal etíope
+    - Gosto de música metal australiano
+    - Sou fã de música metal neozelandês
+    - Gosto de música metal malásio
+    - Gosto de música metal indonésio
+    - Sou fã de música metal filipino
+    - Gosto de música metal tailandês
+    - Sou fã de música metal vietnamita
+    - Gosto de música metal sul-africano
+    - Sou fã de música metal nigeriano
+    - Gosto de música metal egípcio
+    - Sou fã de música metal marroquino
+    - Gosto de música metal tunisiano
+    - Sou fã de música metal argelino
+    - Gosto de música metal líbio
+    - Sou fã de música metal sudanês
+    - Gosto de música metal etíope

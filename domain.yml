@@ -1,0 +1,56 @@
+version: "3.1"
+
+intents:
+- saudacao
+- recomendar_musica
+- genero_musical
+
+responses:
+  utter_select_genre:
+    - text: "Me informe seu gênero musical preferido."
+  
+  utter_informar_genero:
+    - text: "Seu gênero musical preferido é {genero}"
+
+  utter_musica_escolhida:
+    - text: "Aqui está uma música para você: {musica}"
+
+  utter_goodbye:
+    - text: "Até mais"
+
+
+actions:
+- utter_greet
+- utter_ask_genre_preference
+- action_recommend_music
+
+entities:
+- genero
+- musica
+
+slots:
+  genero_musica:
+    type: categorical
+    values:
+     - rock
+     - pop
+     - eletronica
+    mappings:
+      - type: from_entity
+        entity: genero
+
+  musica_escolhida:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: musica
+
+responses:
+  utter_greet:
+  - text: "Olá! Como posso ajudá-lo hoje?"
+
+  utter_ask_genre_preference:
+  - text: "Qual o seu gênero musical preferido?"
+
+  utter_default:
+  - text: "Desculpe, não entendi. Você poderia repetir, por favor?"
